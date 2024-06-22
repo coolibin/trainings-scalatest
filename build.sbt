@@ -23,6 +23,8 @@ lazy val `module-1` = project
   .settings(
     name := "module-1",
     libraryDependencies ++= Seq(
-      "org.scalatest" %% "scalatest" % Versions.scalaTest
+      "org.scalatest" %% "scalatest" % Versions.scalaTest,
+      "com.typesafe.scala-logging" %% "scala-logging" % Versions.scalaLogging,
+      "ch.qos.logback" % "logback-classic" % Versions.logBackClassic
     )
   )
